@@ -1,13 +1,31 @@
 {
   "name": "node_project_two_prisma",
   "version": "1.0.0",
-  "description": "",
+  "description": "In this project, you will build API for a bookstore and use Prisma with SQlite.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "prisma-migrate": "npx prisma migrate dev",
     "seed": "node prisma/seed.js"
   },
   "author": "Duraan",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdiwali-Eid/Node-Project-Two-Prisma.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Abdiwali-Eid/Node-Project-Two-Prisma/issues"
+  },
+  "homepage": "https://github.com/Abdiwali-Eid/Node-Project-Two-Prisma#readme",
+  "dependencies": {
+    "@prisma/client": "^5.3.0",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "prisma": "^5.3.0"
+  }
 }
